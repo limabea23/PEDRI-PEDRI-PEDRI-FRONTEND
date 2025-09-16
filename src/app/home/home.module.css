@@ -1,0 +1,70 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    color: #1a237e;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    color: #3949ab;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.btnLiberar {
+    background: #3949ab;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btnLiberar:disabled {
+    background: #9fa8da;
+    cursor: not-allowed;
+}
+
+.gridListagem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.cardListagem {
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 220px;
+    height: 220px; 
+    width: 100%;
+    overflow: hidden; 
+}
+
+.imagemPedri {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 0; 
+}
