@@ -59,6 +59,13 @@
     height: 220px; 
     width: 100%;
     overflow: hidden; 
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cardListagem:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 24px #000000;
+    cursor: pointer;
 }
 
 .imagemPedri {
