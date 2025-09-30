@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./home.module.css";
 
+import Footer from "../../../components/Footer";
+import Header from "../../../components/Header";
+
 export default function Page() {
     const [listagem, setListagem] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -25,9 +28,11 @@ export default function Page() {
     }, []);
 
     return (
+        <>
+        <Header />
         <div className={styles.container}>
-            <h1 className={styles.titulo}>PEDRI PEDRI PEDRI</h1>
-            <p className={styles.subtitulo}>Mais que um site, sua fonte número 1 sobre Pedri — o espaço definitivo para fãs conhecerem tudo sobre o Maestro do Barça e da Espanha.</p>
+            <h1 className={styles.titulo}>TUDO SOBRE O PEDRI, EM UM SÓ LUGAR</h1>
+            <p className={styles.subtitulo}>Encontre aqui os conteúdos mais importantes organizados para você.</p>
 
             <div className={styles.gridListagem}>
                 {listagem.map((listagem) => (
@@ -42,5 +47,7 @@ export default function Page() {
             )}
             </div>
         </div>
+        <Footer />
+        </>
     );
 }
