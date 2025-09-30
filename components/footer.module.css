@@ -1,5 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
+.container { 
+    background-color: #871A28;
+    color: #ffffff;
     box-sizing: border-box;
+    padding: 16px 0;
+}
+
+.texto {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
