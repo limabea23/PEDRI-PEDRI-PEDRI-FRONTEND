@@ -1,25 +1,37 @@
-"use client";
-
 import Image from "next/image";
 import Link from 'next/link';
+import styles from "./home.module.css";
+
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function Home() {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-between min-h-screen bg-gradient-to-r from-black  to-pink-900 text-white px-10 py-16">
+        <>
+        <Header />
 
-            <div className="max-w-lg space-y-6">
-                <h1 className="text-sm tracking-widest text-pink-400 uppercase">Minha aplicação CRUD</h1>
-                <h2 className="text-4xl md:text-5xl font-extrabold">PORTA 23</h2>
+        <div className={styles.container}>
+            <h1 className={styles.titulo}>PEDRI PEDRI PEDRI</h1>
+            <p className={styles.subtitulo}>Mais que um site, sua fonte número 1 sobre Pedri — o espaço definitivo para fãs conhecerem tudo sobre o Maestro do Barça e da Espanha.</p>
 
-                <p className="text-lg"> 2TDS1 - Técnico em Desenvolvimento de Sistemas - SENAI</p>
-                <p className="text-xl font-medium">Beatriz Lima</p>
+            <Image
+                src="/pedriedit.jpg"
+                alt="Edit do Pedri"
+                width={900}
+                height={300}
+                className={styles.image}
+            />
 
-                <blockquote className="italic text-gray-300 border-l-4 border-pink-500 pl-4">"Nós temos uma escolha... de viver ou apenas existir." - Harry Styles</blockquote>
+            <p className={styles.frase}>O futuro do futebol veste a camisa 8 do Barcelona - De Tegueste para o mundo.</p>
 
-                <Link href="/home">
-                    <button className="px-6 py-3 rounded-full bg-pink-600 hover:bg-pink-700 transition text-white font-semibold shadow-lg"> Entre. Descubra. Sinta. 🥂</button>
-                </Link>
-            </div>
+            <p className={styles.bio}>Pedri González é um dos maiores talentos do futebol espanhol da atualidade. Nascido em Tegueste, nas Ilhas Canárias, em 2002, rapidamente conquistou espaço no FC Barcelona e na Seleção Espanhola. Conhecido por sua visão de jogo, inteligência tática e habilidade técnica, Pedri é considerado o sucessor natural dos grandes meio-campistas da história do clube catalão.</p>
+
+            <Link href="/conteudos" className={styles.button}>
+                        DESVENDAR CATEGORIAS
+            </Link>
         </div>
-    )
+
+        <Footer />
+        </>
+    );
 }

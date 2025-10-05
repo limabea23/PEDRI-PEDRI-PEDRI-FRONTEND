@@ -1,0 +1,43 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    color: #1a237e;
+    font-weight: bold;
+}
+
+.subtitulo {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    color: #3949ab;
+}
+
+.frase {
+    text-align: center;
+    font-weight: 600;
+}
+
+.bio {
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    background: #264b89;
+    padding: 1.1rem 2.5rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
