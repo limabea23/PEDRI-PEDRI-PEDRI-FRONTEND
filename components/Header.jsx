@@ -1,5 +1,6 @@
 import styles from "./header.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -13,14 +14,14 @@ export default function Header() {
                     height={200}
                     />
                 </div>
-                <h1 className={styles.texto}>BIOGRAFIA</h1>
-                <h1 className={styles.texto}>BARÇA</h1>
-                <h1 className={styles.texto}>SELEÇÃO ESPANHOLA</h1>
-                <h1 className={styles.texto}>GALERIA</h1>
-                <h1 className={styles.texto}>CURIOSTYLE</h1>
-                <h1 className={styles.texto}>NOTÍCIAS</h1>
-                <h1 className={styles.texto}>CADASTRO</h1>
-                <h1 className={styles.texto}>SOBRE MIM</h1>
+                <Link href="/biografia"><h1 className={styles.texto}>BIOGRAFIA</h1></Link>
+                <Link href="/barcelona"><h1 className={styles.texto}>BARÇA</h1></Link>
+                <Link href="/espanha"><h1 className={styles.texto}>SELEÇÃO</h1></Link>
+                <Link href="/galeria"><h1 className={styles.texto}>GALERIA</h1></Link>
+                <Link href="/curiostyle"><h1 className={styles.texto}>CURIOSTYLE</h1></Link>
+                <Link href="/noticias"><h1 className={styles.texto}>NOTÍCIAS</h1></Link>
+                <Link href="/cadastro"><h1 className={styles.texto}>CADASTRO</h1></Link>
+                <Link href="/sobre"><h1 className={styles.texto}>SOBRE MIM</h1></Link>
             </header>
         </div>
     );
