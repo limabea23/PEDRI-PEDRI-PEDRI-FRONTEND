@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react";
 import axios from "axios";
-import styles from "./home.module.css";
+import styles from "./conteudo.module.css";
 
 import Footer from "../../../components/Footer";
 import Header from "../../../components/Header";
 
-export default function Page() {
+export default function Conteudos() {
     const [listagem, setListagem] = useState([]);
     const [loading, setLoading] = useState(false);
 
