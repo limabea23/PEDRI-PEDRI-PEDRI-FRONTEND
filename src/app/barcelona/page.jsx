@@ -5,7 +5,7 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import Card from "../../../components/Cards";
 
-export default function Biografia() {
+export default function Barcelona() {
     return (
         <>
         <Header />
