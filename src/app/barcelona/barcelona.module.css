@@ -1,0 +1,21 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    color: #1a237e;
+    font-weight: bold;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    color: #3949ab;
+}
