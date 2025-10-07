@@ -15,6 +15,7 @@ export default function Sobre() {
             <p className={styles.subtitulo}>Aqui você conhece um pouco mais sobre mim e pode me contatar pelas minhas redes ou e-mail</p>
 
             <div className={styles.infos}>
+                <div className={styles.media}>
                 <Image
                 src="/beapedri.png"
                 alt="Imagem da desenvolvedora do projeto, Beatriz, ao lado do Pedri. (Imagem gerada por inteligência artificial)"
@@ -23,17 +24,28 @@ export default function Sobre() {
                 className={styles.image}
                 />
 
+                <iframe
+                data-testid="embed-iframe"
+                style={{ borderRadius: "12px" }}
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1DXaeWcjUkMBOl?utm_source=generator"
+                width="260"
+                height="180"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                ></iframe>
+                </div>
+
             <div className={styles.direita}>
                 <h2>QUEM SOU EU?</h2>
                 <p className={styles.texto}>Eu sou a Bea — a mente (e o coração) por trás deste site.</p>
                 <p className={styles.texto}>Criei este espaço para reunir tudo sobre o Pedri — sua história, momentos marcantes, curiosidades e muito mais coisas.</p>
-                <p className={styles.texto}>Feito com carinho e criatividade, espero que você sinta a mesma alegria e orgulho que senti ao montar cada detalhe. 💛".</p>
+                <p className={styles.texto}>Feito com carinho e criatividade, espero que você sinta a mesma alegria e orgulho que senti ao montar cada detalhe. 💛</p>
 
                 <div className={styles.contatos}>
-                    <a href="beatriz.lima14@aluno.senai.br" target="_blank">
+                    <a href="mailto:beatriz.lima14@aluno.senai.br" target="_blank">
                         <FaEnvelope size={32}/> 
                     </a>
-                    <a href="https://www.linkedin.com/in/seulinkedin" target="_blank">
+                    <a href="https://www.linkedin.com/in/beatriz-lima-74145430a/" target="_blank">
                         <FaLinkedin size={32}/>
                     </a>
                     <a href="https://github.com/limabea23" target="_blank">
