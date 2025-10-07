@@ -7,12 +7,14 @@ export default function Header() {
         <div className={styles.container}>
             <header className={styles.header}>
                 <div className={styles.imagem}>
-                    <Image
-                    src="/pedri-header.png"
-                    alt="Logo"
-                    width={200}
-                    height={200}
-                    />
+                    <Link href="/">
+                        <Image
+                            src="/pedri-header.png"
+                            alt="Logo"
+                            width={200}
+                            height={200}
+                        />
+                    </Link>
                 </div>
                 <Link href="/biografia"><h1 className={styles.texto}>BIOGRAFIA</h1></Link>
                 <Link href="/barcelona"><h1 className={styles.texto}>BARÇA</h1></Link>
